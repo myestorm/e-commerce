@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+html { width: 100%; margin: 0; padding: 0; font-size: 16px; font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft Yahei", Simsun, "宋体", Arial, Helvetica, sans-serif; color: #333333; line-height: 150%; background: #f8f8f8; }
+body { padding: 0; margin: 0; }
+
+.wrapper { width: 960px; margin: 0 auto; }
+
+.row { width: 100%; float: left; clear: both; }
+.container-fluid { padding-top: 30px; }

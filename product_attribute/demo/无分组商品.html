@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="home-page">
+<head>
+<meta charset="utf-8">
+<title>电商网站产品购买，属性选择 - estorm.cn</title>
+<meta name="keywords" content="keywords">
+<meta name="description" content="description">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../../lib/favicon.ico">
+<link rel="stylesheet" href="../../lib/vendor.min.css">
+<link rel="stylesheet" href="../product_attribute.min.css">
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <div class="wrapper">
+            <div class="es-product-attribute"></div>
+        </div>
+    </div>
+
+    <script>
+    var $DATA = {
+        "parms": [
+            {
+                "pid": "17",
+                "name": "版本",
+                "list": [
+                    {
+                        "id": "122",
+                        "name": "部落版"
+                    },
+                    {
+                        "id": "123",
+                        "name": "联盟版"
+                    },
+                    {
+                        "id": "124",
+                        "name": "星际版"
+                    },
+                    {
+                        "id": "125",
+                        "name": "超人版"
+                    },
+                    {
+                        "id": "126",
+                        "name": "蝙蝠侠版"
+                    }
+                ]
+            },
+            {
+                "pid": "18",
+                "name": "系统",
+                "list": [
+                    {
+                        "id": "72",
+                        "name": "安卓"
+                    },
+                    {
+                        "id": "73",
+                        "name": "iso"
+                    },
+                    {
+                        "id": "74",
+                        "name": "塞班"
+                    }
+                ]
+            }
+        ],
+        "products": [
+            {
+                "sku": "10962",
+                "stock": "0",
+                "price": "500",
+                "ori_price": "798",
+                "parms": [
+                    {
+                        "pid": "17",
+                        "id": "122"
+                    },
+                    {
+                        "pid": "18",
+                        "id": "72"
+                    }
+                ]
+            },
+            {
+                "sku": "10963",
+                "stock": "10",
+                "price": "500",
+                "ori_price": "798",
+                "parms": [
+                    {
+                        "pid": "17",
+                        "id": "123"
+                    },
+                    {
+                        "pid": "18",
+                        "id": "72"
+                    }
+                ]
+            },
+            {
+                "sku": "11008",
+                "stock": "10",
+                "price": "498",
+                "ori_price": "798",
+                "parms": [
+                    {
+                        "pid": "17",
+                        "id": "122"
+                    },
+                    {
+                        "pid": "18",
+                        "id": "73",
+                    }
+                ]
+            },
+            {
+                "sku": "11009",
+                "stock": "0",
+                "price": "498",
+                "ori_price": "798",
+                "parms": [
+                    {
+                        "pid": "17",
+                        "id": "123"
+                    },
+                    {
+                        "pid": "18",
+                        "id": "73"
+                    }
+                ]
+            }
+        ]
+    };
+    </script>
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../product_attribute.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.es-product-attribute').esProductAttribute({
+            data: $DATA,
+            change: function(li, liData, data){
+                console.log(li, liData, data);
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="home-page">
+<head>
+<meta charset="utf-8">
+<title>电商网站产品购买，属性选择 - estorm.cn</title>
+<meta name="keywords" content="keywords">
+<meta name="description" content="description">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../../lib/favicon.ico">
+<link rel="stylesheet" href="../../lib/vendor.min.css">
+<link rel="stylesheet" href="../product_attribute.min.css">
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <div class="wrapper">
+            <div class="es-product-attribute"></div>
+        </div>
+    </div>
+
+    <script>
+    var $DATA = {
+        groups: [{
+            gid: "200230",
+            name: "朗丽水果蒸的派三明治蒸蛋糕",
+            price: "29.80",
+            img: "../images/1.jpg",
+            sorts: "1",
+            url: "#1"
+        }, {
+            gid: "200231",
+            name: "百吉福奶酪布丁套餐柠檬草莓蓝莓三口味",
+            price: "65.00",
+            img: "../images/2.jpg",
+            sorts: "3",
+            url: "#2"
+        }, {
+            gid: "200232",
+            name: "月盛斋老汤牛肉200g 熟食中华老字号酱牛肉清真黄牛肉特产",
+            price: "28.50",
+            img: "../images/3.jpg",
+            sorts: "2",
+            url: "#3"
+        }],
+        parms: [],
+        products: [{
+            sku: "100010",
+            stock: "3",
+            price: "120.00",
+            ori_price: "200.00",
+            parms: []
+        }]
+    };
+    </script>
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../product_attribute.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.es-product-attribute').esProductAttribute({
+            data: $DATA,
+            change: function(li, liData, data){
+                console.log(li, liData, data);
+            }
+        });
+    });
+    </script>
+</body>
+</html>

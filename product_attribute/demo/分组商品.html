@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="home-page">
+<head>
+<meta charset="utf-8">
+<title>电商网站产品购买，属性选择 - estorm.cn</title>
+<meta name="keywords" content="keywords">
+<meta name="description" content="description">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../../lib/favicon.ico">
+<link rel="stylesheet" href="../../lib/vendor.min.css">
+<link rel="stylesheet" href="../product_attribute.min.css">
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <div class="wrapper">
+            <div class="es-product-attribute"></div>
+        </div>
+    </div>
+
+    <script>
+    var $DATA = {
+        groups: [{
+            gid: "200230",
+            name: "朗丽水果蒸的派三明治蒸蛋糕",
+            price: "29.80",
+            img: "../images/1.jpg",
+            sorts: "1",
+            url: "#1"
+        }, {
+            gid: "200231",
+            name: "百吉福奶酪布丁套餐柠檬草莓蓝莓三口味",
+            price: "65.00",
+            img: "../images/2.jpg",
+            sorts: "3",
+            url: "#2"
+        }, {
+            gid: "200232",
+            name: "月盛斋老汤牛肉200g 熟食中华老字号酱牛肉清真黄牛肉特产",
+            price: "28.50",
+            img: "../images//3.jpg",
+            sorts: "2",
+            url: "#3"
+        }],
+        parms: [{
+            pid: "300100",
+            name: "颜色",
+            gid: "200230",
+            list: [{
+                id: "1",
+                name: "红色"
+            }, {
+                id: "2",
+                name: "黑色"
+            }, {
+                id: "3",
+                name: "蓝色"
+            }]
+        }, {
+            pid: "300101",
+            name: "产地",
+            gid: "200230",
+            list: [{
+                id: "1",
+                name: "美国"
+            }, {
+                id: "2",
+                name: "法国"
+            }, {
+                id: "3",
+                name: "澳大利亚"
+            }]
+        }, {
+            pid: "300102",
+            name: "包装",
+            gid: "200230",
+            list: [{
+                id: "1",
+                name: "普通"
+            }, {
+                id: "2",
+                name: "豪华"
+            }]
+        }, {
+            pid: "300103",
+            name: "口味",
+            gid: "200231",
+            list: [{
+                id: "1",
+                name: "草莓"
+            }, {
+                id: "2",
+                name: "柠檬"
+            }, {
+                id: "3",
+                name: "布丁"
+            }, {
+                id: "4",
+                name: "巧克力"
+            }]
+        }],
+        products: [{
+            sku: "100010",
+            stock: "3",
+            price: "120.00",
+            ori_price: "200.00",
+            parms: [{
+                gid: "200230",
+                pid: "300100",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300101",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300102",
+                id: "1",
+            }, {
+                gid: "200231",
+                pid: "300103",
+                id: "1",
+            }]
+        }, {
+            sku: "100011",
+            stock: "3",
+            price: "160.00",
+            ori_price: "200.00",
+            parms: [{
+                gid: "200230",
+                pid: "300100",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300101",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300102",
+                id: "1",
+            }, {
+                gid: "200231",
+                pid: "300103",
+                id: "2",
+            }]
+        }, {
+            sku: "100012",
+            stock: "0",
+            price: "180.00",
+            ori_price: "200.00",
+            parms: [{
+                gid: "200230",
+                pid: "300100",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300101",
+                id: "1",
+            }, {
+                gid: "200230",
+                pid: "300102",
+                id: "1",
+            }, {
+                gid: "200231",
+                pid: "300103",
+                id: "3",
+            }]
+        }, {
+            sku: "100013",
+            stock: "3",
+            price: "120.00",
+            ori_price: "200.00",
+            parms: [{
+                gid: "200230",
+                pid: "300100",
+                id: "2",
+            }, {
+                gid: "200230",
+                pid: "300101",
+                id: "2",
+            }, {
+                gid: "200230",
+                pid: "300102",
+                id: "1",
+            }, {
+                gid: "200231",
+                pid: "300103",
+                id: "1",
+            }]
+        }]
+    };
+    </script>
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../product_attribute.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.es-product-attribute').esProductAttribute({
+            data: $DATA,
+            change: function(li, liData, data){
+                console.log(li, liData, data);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
