@@ -1,6 +1,5 @@
 # 电商网站产品购买区域，属性选择jQuery插件：esProductAttribute
 
----
 
 ### 基本使用方法
 
