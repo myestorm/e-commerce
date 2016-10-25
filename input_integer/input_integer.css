@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.es-input-integer { width: 200px; border: 1px #dddddd solid; background: #ffffff; height: 36px; overflow: hidden; margin: 20px auto; }
+.es-input-integer input { width: 50%; border: 0; height: 34px; text-align: center; font-size: 16px; float: left; }
+.es-input-integer a { width: 24%; text-align: center; text-decoration: none; line-height: 36px; font-size: 20px; color: #666666; font-weight: bold; outline: 0; }
+.es-input-integer a:hover { background: #f0f0f0; }
+.es-input-integer a.add { float: right; border-left: 1px #dddddd solid; }
+.es-input-integer a.sub { float: left; border-right: 1px #dddddd solid; }
+.es-input-integer a.disabled { background: #f0f0f0; color: #cccccc; }
+
+/*# sourceMappingURL=../../sourcemaps/static/styles/input_integer.css.map */

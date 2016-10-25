@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="home-page">
+<head>
+<meta charset="utf-8">
+<title>购买数量 estorm.cn</title>
+<meta name="keywords" content="keywords">
+<meta name="description" content="description">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../lib/favicon.ico">
+<link rel="stylesheet" href="../lib/vendor.min.css">
+<link rel="stylesheet" href="input_integer.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid row">
+        <div class="wrapper">
+
+            <input class="normal" type="text" data-min="1" data-max="10" data-val="1" value="1">
+            <input class="normal" type="text" data-min="90" data-max="100" data-val="95" value="95">
+            <input class="normal" type="text" data-min="-10" data-max="10" data-val="0" value="0">
+
+            <input class="before" type="text" data-min="-10" data-max="10" data-val="0" value="0">
+
+        </div>
+    </div>
+
+    <script src="../lib/jquery.min.js"></script>
+    <script src="input_integer.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.normal').esInputInteger({
+            change: function(val){
+                console.log(val);
+            }
+        });
+
+        $('.before').esInputInteger({
+            before: function(val){
+                console.log(val);
+                return false;
+            },
+            change: function(val){
+                console.log(val);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
