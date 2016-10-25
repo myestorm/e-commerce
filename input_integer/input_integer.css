@@ -7,5 +7,3 @@
 .es-input-integer a.add { float: right; border-left: 1px #dddddd solid; }
 .es-input-integer a.sub { float: left; border-right: 1px #dddddd solid; }
 .es-input-integer a.disabled { background: #f0f0f0; color: #cccccc; }
-
-/*# sourceMappingURL=../../sourcemaps/static/styles/input_integer.css.map */
