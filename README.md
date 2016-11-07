@@ -8,6 +8,7 @@
 ### 专题使用插件
 
  - [左右摇晃插件：jRumble][4]
+ - [下雪插件：esSnow][5]
 
   
   
@@ -21,3 +22,4 @@
   [2]: https://github.com/MikeMcl/decimal.js
   [3]: input_integer/
   [4]: https://github.com/jackrugile/jrumble/
+  [5]: snow/

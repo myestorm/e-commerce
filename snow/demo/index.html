@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="home-page" style="background: #66cc33;">
+<head>
+<meta charset="utf-8">
+<title>下雪 estorm.cn</title>
+<meta name="keywords" content="下雪,snow">
+<meta name="description" content="下雪,snow">
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="../../lib/favicon.ico">
+<link rel="stylesheet" href="../../lib/vendor.min.css">
+<link rel="stylesheet" href="../snow.min.css">
+</head>
+
+<body>
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../snow.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $.fn.esSnow();
+        var items = [];
+        for(var i=0; i<20; i++){
+            items[i] = '<div class="snow-item snow-item-'+ (i+1) +'"></div>';
+        }
+        $.fn.esSnow({
+            type: 'icon',
+            items: items
+        });
+    });
+    </script>
+</body>
+</html>
