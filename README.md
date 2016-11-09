@@ -3,6 +3,8 @@
  - [购买属性选择：esProductAttribute][1]
  - [数学运算插件：decimal.js][2]
  - [购买数量：esInputInteger][3]
+ - [Cookie：js-cookie][6]
+ - [js处理url：URI.js][7]
  
 
 ### 专题使用插件
@@ -23,3 +25,5 @@
   [3]: input_integer/
   [4]: https://github.com/jackrugile/jrumble/
   [5]: snow/
+  [6]: https://github.com/js-cookie/js-cookie
+  [7]: http://medialize.github.io/URI.js/
